@@ -55,8 +55,8 @@ UnifyImmun's training process is structured into four sequential steps to ensure
 
 `python source/step-4-TCR_2.py`
 
-### Automatically Run All Training Phases
-For the convenience of sequentially running the training phases from Phase 1 to Phase 4, you can use the provided Python script named run_all_phases.py. After ensuring that the required environment and dependencies are installed, execute the following code:
+#### Automatically Run All Training Phases
+>For the convenience of sequentially running the training phases from Phase 1 to Phase 4, you can use the provided Python script named run_all_phases.py. After ensuring that the required environment and dependencies are installed, execute the following code:
 `python source/run_all_phases.py`
 
 This file will automatically run the training phases from Phase 1 to Phase 4 in order."
