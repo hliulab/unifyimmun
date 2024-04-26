@@ -21,10 +21,12 @@ For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 git clone https://github.com/hliulab/unifyimmun.git
 
 2. Enter UnifyImmun project folder:
+
 ` cd unifyimmun/`
 
 
-3. Set up the Python environment and install the required packages:
+4. Set up the Python environment and install the required packages:
+   
 ` pip install -r requirements.txt `
 
 
@@ -38,15 +40,22 @@ UnifyImmun's training process is structured into four sequential phases to ensur
 
 1. Phase 1: HLA Model Part 1
 Begin the training process with the HLA model's first part.
+
 `python source/step-1-HLA_1.py`
-2. Phase 2: TCR Model Part 1
+
+3. Phase 2: TCR Model Part 1
 Continue with the TCR model's first part.
+
 `python source/step-2-TCR_1.py`
-3. Phase 3: HLA Model Part 2
+
+4. Phase 3: HLA Model Part 2
 Proceed to the HLA model's second part.
+
 `python source/step-3-HLA_2.py`
-4. Phase 4: TCR Model Part 2
+
+5. Phase 4: TCR Model Part 2
 Complete the training with the TCR model's second part.
+
 `python source/step-4-TCR_2.py`
 
 ### Model Testing
@@ -58,6 +67,7 @@ TCR Binding Specificity Test
 Test the TCR model using the provided script.
 
 `python HLA_test.py`
+
 `python TCR_test.py`
 
 Hyperparameter Tuning
