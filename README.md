@@ -19,7 +19,7 @@ For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 ## Installation guide
 >1. Clone the UnifyImmun repository
 
-git clone https://github.com/hliulab/unifyimmun.git
+` git clone https://github.com/hliulab/unifyimmun.git`
 
 >2. Enter UnifyImmun project folder
 
