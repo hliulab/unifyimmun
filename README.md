@@ -21,11 +21,11 @@ For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 git clone https://github.com/hliulab/unifyimmun.git
 
 2. Enter UnifyImmun project folder:
-- cd unifyimmun/
+''' cd unifyimmun/'''
 
 
 3. Set up the Python environment and install the required packages:
-- pip install -r requirements.txt
+''' pip install -r requirements.txt'''
 
 
 ## Input Data Format
