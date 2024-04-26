@@ -1,12 +1,12 @@
-# UnifyImmun: A Unified Cross-Attention Model for Antigen Binding Specificity Prediction
+# UnifyImmun: A Unified Cross-Attention Model for Prediction of Antigen Binding Specificity 
 UnifyImmun is an advanced computational model that predicts the binding specificity of antigens to both HLA and TCR molecules. By employing a unified cross-attention mechanism, UnifyImmun provides a comprehensive evaluation of antigen immunogenicity, which is crucial for the development of effective immunotherapies.
 
 ## Key Features
-- **Unified Model**: Simultaneously predicts bindings to both HLA and TCR molecules.
-- **Cross-Attention Mechanism**: Integrates features of peptides and HLA/TCR molecules for enhanced prediction accuracy.
-- **Progressive Training Strategy**: Utilizes a two-phase training approach to improve feature extraction and model generalizability.
+- **Unified Model**: Simultaneously predicts peptide bindings to both HLA and TCR molecules.
+- **Cross-Attention Mechanism**: Integrates the features of peptides and HLA/TCR molecules for model interpretability.
+- **Progressive Training Strategy**: Utilizes a two-phase progressive training to improve feature extraction and model generalizability.
 - **Virtual Adversarial Training**: Enhances model robustness by training on perturbed data.
-- **Performance**: Outperforms existing methods on multiple benchmark datasets.
+- **Superior Performance**: Outperforms existing methods on both pHLA and pTCR prediction tasks on multiple datasets.
 
 For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 
@@ -34,52 +34,38 @@ git clone https://github.com/hliulab/unifyimmun.git
 The input data should be a CSV file with three columns named `tcr`, `peptide`, and `HLA`, representing the TCR CDR3 sequence, peptide sequence, and HLA sequence, respectively.
 
 ## Usage
-#### The training data for pHLA and pTCR is located in the "data" directory. The model code, as well as the training and testing scripts, can be found in the "source" directory. Models saved during the training process will be stored in the "trained model" directory.
-### Model Training
-UnifyImmun's training process is structured into four sequential phases to ensure the model's proper function and optimization. Each phase is designed to work in conjunction with the others to achieve the best predictive performance.
+The training data for pHLA and pTCR is stored in the <kbd>data</kbd> folder. The source code for UnifyImmun model, as well as the training and testing scripts, are in the <kbd>source</kbd> folder. The trained models are stored in the <kbd>trained model</kbd> folder.
 
-1. Phase 1: HLA Model Part 1
-Begin the training process with the HLA model's first part.
+### Model Training
+UnifyImmun's training process is structured into four sequential steps to ensure the model's proper function and optimization. Each steo is designed to work in conjunction with other steps to achieve the best predictive performance.
+
+Step 1: Begin the training process using the pHLA binding data.
 
 `python source/step-1-HLA_1.py`
 
-3. Phase 2: TCR Model Part 1
-Continue with the TCR model's first part.
+Step 2: Train the model using the pTCR binding data.
 
 `python source/step-2-TCR_1.py`
 
-4. Phase 3: HLA Model Part 2
-Proceed to the HLA model's second part.
+Step 3: Proceed the training process using pHLA binding data.
 
 `python source/step-3-HLA_2.py`
 
-5. Phase 4: TCR Model Part 2
-Complete the training with the TCR model's second part.
+Phase 4: Complete the training using pTCR binding data.
 
 `python source/step-4-TCR_2.py`
 
 ### Model Testing
 After training, the model's performance can be evaluated using the following test scripts.
-HLA Binding Specificity Test
-Test the HLA model using the provided script.
-
-TCR Binding Specificity Test
-Test the TCR model using the provided script.
-
+>HLA Binding Specificity Test
 `python HLA_test.py`
 
+>TCR Binding Specificity Test
 `python TCR_test.py`
 
-Hyperparameter Tuning
-For fine-tuning the model to your specific dataset or requirements, you may need to adjust the hyperparameters within the Python scripts. Hyperparameters can include learning rate, batch size, number of epochs, and other model-specific parameters.
+## Hyperparameter Tuning
+If transfer the model using your custom dataset, you may need to adjust the hyperparameters within the Python scripts. Hyperparameters include learning rate, batch size, number of epochs, and other model-specific parameters.
 
-To modify the hyperparameters:
-
-Open the relevant Python script in a text editor or IDE.
-Locate the section where hyperparameters are defined.
-Adjust the hyperparameter values according to your needs.
-Save the changes to the script.
-Re-run the training and testing scripts to apply the new hyperparameters.
 Note: Ensure that the file paths and script names provided in the commands match those in your project directory. The source/ directory and script names like HLA_test.py and TCR_test.py are placeholders and should be replaced with the actual paths and filenames used in your implementation.
 
 ## Customizing Output
