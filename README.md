@@ -71,19 +71,6 @@ Adjust the hyperparameter values according to your needs.
 Save the changes to the script.
 Re-run the training and testing scripts to apply the new hyperparameters.
 Note: Ensure that the file paths and script names provided in the commands match those in your project directory. The source/ directory and script names like HLA_test.py and TCR_test.py are placeholders and should be replaced with the actual paths and filenames used in your implementation.
-=======
-UnifyImmun operates in four sequential phases to ensure the proper function of the model.
-
-- **Phase 1**: Predict using HLA model part 1
-python step-1-HLA_1.py
-- **Phase 2**: Predict using TCR model part 1
-python step-2-TCR_1.py
-- **Phase 3**: Predict using HLA model part 2
-python step-3-HLA_2.py
-- **Phase 4**: Predict using TCR model part 2
-python step-4-TCR_2.py
-
->>>>>>> 6943ce31293fd5bf683f311056bab925f4b4b35a
 
 ## Customizing Output
 To customize the output results, users can modify the parameters within each script. Detailed comments within the code provide descriptions and guidance for parameter adjustments.
@@ -93,8 +80,4 @@ For further assistance, bug reports, or to request new features, please contact 
 
 ---
 
-<<<<<<< HEAD
 Please replace the placeholder links and information with actual data when the repository is available. Ensure that the instructions are clear and that the repository contains the `requirements.txt` file with all necessary dependencies listed.
-=======
-Please replace the placeholder links and information with actual data when the repository is available. Ensure that the instructions are clear and that the repository contains the `requirements.txt` file with all necessary dependencies listed.
->>>>>>> 6943ce31293fd5bf683f311056bab925f4b4b35a
