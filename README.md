@@ -39,28 +39,30 @@ The training data for pHLA and pTCR is stored in the <kbd>data</kbd> folder. The
 ### Model Training
 UnifyImmun's training process is structured into four sequential steps to ensure the model's proper function and optimization. Each steo is designed to work in conjunction with other steps to achieve the best predictive performance.
 
-Step 1: Begin the training process using the pHLA binding data.
+>Step 1: Begin the training process using the pHLA binding data.
 
 `python source/step-1-HLA_1.py`
 
-Step 2: Train the model using the pTCR binding data.
+>Step 2: Train the model using the pTCR binding data.
 
 `python source/step-2-TCR_1.py`
 
-Step 3: Proceed the training process using pHLA binding data.
+>Step 3: Proceed the training process using pHLA binding data.
 
 `python source/step-3-HLA_2.py`
 
-Phase 4: Complete the training using pTCR binding data.
+>Phase 4: Complete the training using pTCR binding data.
 
 `python source/step-4-TCR_2.py`
 
 ### Model Testing
 After training, the model's performance can be evaluated using the following test scripts.
 >HLA Binding Specificity Test
+
 `python HLA_test.py`
 
 >TCR Binding Specificity Test
+
 `python TCR_test.py`
 
 ## Hyperparameter Tuning
