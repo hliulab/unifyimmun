@@ -32,7 +32,6 @@ pip install -r requirements.txt
 The input data should be a CSV file with three columns named `tcr`, `peptide`, and `HLA`, representing the TCR CDR3 sequence, peptide sequence, and HLA sequence, respectively.
 
 ## Usage
-<<<<<<< HEAD
 #### The training data for pHLA and pTCR is located in the "data" directory. The model code, as well as the training and testing scripts, can be found in the "source" directory. Models saved during the training process will be stored in the "trained model" directory.
 ### Model Training
 UnifyImmun's training process is structured into four sequential phases to ensure the model's proper function and optimization. Each phase is designed to work in conjunction with the others to achieve the best predictive performance.
