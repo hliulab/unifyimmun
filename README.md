@@ -29,11 +29,19 @@ For inquiries or collaborations, please contact: hliu@njtech.edu.cn
    
 ` pip install -r requirements.txt `
 
+## Demo
+>Predict HLA binding specificity using pHLA test set
+
+`python HLA_test.py`
+
+>Evaluate TCR binding specificity using pTCR test set
+
+`python TCR_test.py`
 
 ## Input data format
 The input data should be a CSV file with three columns named `tcr`, `peptide`, and `HLA`, representing the TCR CDR3 sequence, peptide sequence, and HLA sequence, respectively.
 
-## Usage
+## Instructions for use
 The training data for pHLA and pTCR is stored in the <kbd>data</kbd> folder. The source code for UnifyImmun model, as well as the training and testing scripts, are in the <kbd>source</kbd> folder. The trained models are stored in the <kbd>trained model</kbd> folder.
 
 ### Model training
@@ -69,7 +77,7 @@ After training, the model's performance can be evaluated using the following tes
 
 >Evaluate TCR binding specificity using pTCR test set
 
-`Predict TCR_test.py`
+`python TCR_test.py`
 
 ### Hyperparameter adjustment
 If transfer the model using your custom dataset, you may need to adjust the hyperparameters within the Python scripts. Hyperparameters include learning rate, batch size, number of epochs, and other model-specific parameters.
