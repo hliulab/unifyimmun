@@ -137,7 +137,7 @@ train_fold_performance_list, val_fold_performance_list,independent_fold_performa
 triple_fold_metrics_list = []
 attention_train_dict, attention_val_dict, attention_independent_dict, attention_external_dict = {}, {}, {}, {}
 
-for fold in range(1, 7):
+for fold in range(6, 7):
     print('Fold-{}:'.format(fold))
     print('Load HLA Data:')
     path_all = '../trained model/TCR_2'
