@@ -128,7 +128,7 @@ def valid_HLA(model, val_loader, fold, epoch, epochs):
 
 
 independent_loader = data_load_tcr(type_='independent', fold=None, batch_size=batch_size)
-external_loader = data_load_tcr(type_='Covid', fold=None, batch_size=batch_size)
+external_loader = data_load_tcr(type_='covid', fold=None, batch_size=batch_size)
 triple_loader = data_load_tcr(type_='triple', fold=None, batch_size=batch_size)
 
 
@@ -137,7 +137,7 @@ train_fold_performance_list, val_fold_performance_list,independent_fold_performa
 triple_fold_metrics_list = []
 attention_train_dict, attention_val_dict, attention_independent_dict, attention_external_dict = {}, {}, {}, {}
 
-for fold in range(6, 7):
+for fold in range(9, 10):
     print('Fold-{}:'.format(fold))
     print('Load HLA Data:')
     path_all = '../trained model/TCR_2'
