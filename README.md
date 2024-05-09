@@ -11,6 +11,7 @@ UnifyImmun is an advanced computational model that predicts the binding specific
 For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 
 ## System requirements
+- **Linux version**: 4.18.0-193 (Centos tested)
 - **GPU**: NVIDIA GeForce RTX 4090 (or compatible GPUs)
 - **CUDA Version**: 12.4
 - **Python**: 3.10
@@ -47,26 +48,7 @@ The input data should be a CSV file with three columns named `tcr`, `peptide`, a
 The training data for pHLA and pTCR is stored in the <kbd>data</kbd> folder. The source code for UnifyImmun model, as well as the training and testing scripts, are in the <kbd>source</kbd> folder. The trained models are stored in the <kbd>trained model</kbd> folder.
 
 ### Model training
-UnifyImmun's training process is structured into four sequential steps to ensure the model's proper function and optimization. Each steo is designed to work in conjunction with other steps to achieve the best predictive performance.
-
->Step 1: Begin the training process using the pHLA binding data.
-
-`python source/step-1-HLA_1.py`
-
->Step 2: Train the model using the pTCR binding data.
-
-`python source/step-2-TCR_1.py`
-
->Step 3: Proceed the training process using pHLA binding data.
-
-`python source/step-3-HLA_2.py`
-
->Phase 4: Complete the training using pTCR binding data.
-
-`python source/step-4-TCR_2.py`
-
-### Batch run training steps
->For the convenience of sequentially running all the training steps, you can use the provided Python script named run_all_phases.py. After ensuring that the required environment and dependencies are installed, execute the following code:
+For the convenience of sequentially running all the training steps, you can use the provided Python script named run_all_phases.py. After ensuring that the required environment and dependencies are installed, execute the following code:
 
 `python source/run_all_phases.py`
 
