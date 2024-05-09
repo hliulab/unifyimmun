@@ -38,6 +38,8 @@ For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 
 `python TCR_test.py`
 
+> When batch_size=8192, the time required to run the above two demos is about 2 minutes
+
 ## Input data format
 The input data should be a CSV file with three columns named `tcr`, `peptide`, and `HLA`, representing the TCR CDR3 sequence, peptide sequence, and HLA sequence, respectively.
 
