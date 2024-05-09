@@ -30,22 +30,11 @@ For inquiries or collaborations, please contact: hliu@njtech.edu.cn
    
 ` pip install -r requirements.txt `
 
-## Demo
->Predict HLA binding specificity using pHLA test set
-
-`python HLA_test.py`
-
->Evaluate TCR binding specificity using pTCR test set
-
-`python TCR_test.py`
-
-> When batch_size=8192, the time required to run the above two demos is about 2 minutes
-
-## Input data format
-The input data should be a CSV file with three columns named `tcr`, `peptide`, and `HLA`, representing the TCR CDR3 sequence, peptide sequence, and HLA sequence, respectively.
-
 ## Instructions for use
-The training data for pHLA and pTCR is stored in the <kbd>data</kbd> folder. The source code for UnifyImmun model, as well as the training and testing scripts, are in the <kbd>source</kbd> folder. The trained models are stored in the <kbd>trained model</kbd> folder.
+The training data for pHLA and pTCR is stored in the <kbd>data</kbd> folder. The source code for UnifyImmun model, as well as the training and testing scripts, are in the <kbd>source</kbd> folder. The trained models are stored in the <kbd>trained_model</kbd> folder.
+
+### Input data format
+The input data should be a CSV file with three columns named `tcr`, `peptide`, and `HLA`, representing the TCR CDR3 sequence, peptide sequence, and HLA sequence, respectively.
 
 ### Model training
 For the convenience of sequentially running all the training steps, you can use the provided Python script named run_all_phases.py. After ensuring that the required environment and dependencies are installed, execute the following code:
@@ -53,8 +42,9 @@ For the convenience of sequentially running all the training steps, you can use 
 `python source/run_all_phases.py`
 
 
+
 ### Model testing
-After training, the model's performance can be evaluated using the following test scripts.
+Given your fine-tuned model or our trained model (saved in trained_model folder), you can evaluate it on our provided demo test set using the following test scripts.
 >Predict HLA binding specificity using pHLA test set
 
 `python HLA_test.py`
@@ -62,6 +52,9 @@ After training, the model's performance can be evaluated using the following tes
 >Evaluate TCR binding specificity using pTCR test set
 
 `python TCR_test.py`
+
+> In our practice, the time overhead required to run the two demos above is about 2 minutes when batch_size=8192.
+
 
 ### Hyperparameter adjustment
 If transfer the model using your custom dataset, you may need to adjust the hyperparameters within the Python scripts. Hyperparameters include learning rate, batch size, number of epochs, and other model-specific parameters.
