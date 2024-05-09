@@ -222,8 +222,8 @@ for fold in range(1, 6):
     val_data = pd.read_csv('../data/data_HLA_new/train_fold_{}.csv'.format(fold))
     print('Fold-{} Label: Train = {} | Val = {}'.format(fold, Counter(train_data.label), Counter(val_data.label)))
     print('HLA Train:')
-    path_all = '../trained model/HLA_1'
-    save_path = '../trained model/HLA_1/model_HLA_fold{}.pkl'.format( fold)
+    path_all = '../trained_model/HLA_1'
+    save_path = '../trained_model/HLA_1/model_HLA_fold{}.pkl'.format( fold)
     encoder_path = '../trained model/HLA_1/encoder_P_{}.pth'.format(fold)
     print('save path: ', save_path)
     performance_best, epoch_best = 0, -1
