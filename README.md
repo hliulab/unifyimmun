@@ -1,12 +1,12 @@
-# UnifyImmun: A Unified Cross-Attention Model for Prediction of Antigen Binding Specificity 
+# UnifyImmun: a unified cross-attention model for prediction of antigen binding specificity 
 UnifyImmun is an advanced computational model that predicts the binding specificity of antigens to both HLA and TCR molecules. By employing a unified cross-attention mechanism, UnifyImmun provides a comprehensive evaluation of antigen immunogenicity, which is crucial for the development of effective immunotherapies.
 
 ## Key features
-- **Unified Model**: Simultaneously predicts peptide bindings to both HLA and TCR molecules.
-- **Cross-Attention Mechanism**: Integrates the features of peptides and HLA/TCR molecules for model interpretability.
-- **Progressive Training Strategy**: Utilizes a two-phase progressive training to improve feature extraction and model generalizability.
-- **Virtual Adversarial Training**: Enhances model robustness by training on perturbed data.
-- **Superior Performance**: Outperforms existing methods on both pHLA and pTCR prediction tasks on multiple datasets.
+- **Unified model**: Simultaneously predicts peptide bindings to both HLA and TCR molecules.
+- **Cross-attention mechanism**: Integrates the features of peptides and HLA/TCR molecules for model interpretability.
+- **Progressive training strategy**: Utilizes a two-phase progressive training to improve feature extraction and model generalizability.
+- **Virtual adversarial training**: Enhances model robustness by training on perturbed data.
+- **Superior performance**: Outperforms existing methods on both pHLA and pTCR prediction tasks on multiple datasets.
 
 For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 
