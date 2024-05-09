@@ -11,11 +11,11 @@ UnifyImmun is an advanced computational model that predicts the binding specific
 For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 
 ## System requirements
-- **Linux version**: 4.18.0-193 (Centos tested)
+- **Linux version**: 4.18.0-193 (Centos confirmed)
 - **GPU**: NVIDIA GeForce RTX 4090 (or compatible GPUs)
 - **CUDA Version**: 12.4
 - **Python**: 3.10
-- **PyTorch**: 2.2.1 (as per the model implementation)
+- **PyTorch**: 2.2.1 (model implementation)
 
 ## Installation guide
 >1. Clone the UnifyImmun repository
