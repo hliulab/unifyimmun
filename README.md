@@ -31,7 +31,7 @@ For inquiries or collaborations, please contact: hliu@njtech.edu.cn
 ` pip install -r requirements.txt `
 
 ## Instructions for use
-The training data for pHLA and pTCR is stored in the <kbd>data</kbd> folder. The source code for UnifyImmun model, as well as the training and testing scripts, are in the <kbd>source</kbd> folder. The trained models are stored in the <kbd>trained_model</kbd> folder.
+The training data for pHLA and pTCR bindings is stored in the <kbd>data</kbd> folder. The source code of UnifyImmun model, as well as the training and testing scripts, are included in the <kbd>source</kbd> folder. The trained models are stored in the <kbd>trained_model</kbd> folder.
 
 ### Input data format
 The input data should be a CSV file with three columns named `tcr`, `peptide`, and `HLA`, representing the TCR CDR3 sequence, peptide sequence, and HLA sequence, respectively.
