@@ -19,8 +19,6 @@ import torch.utils.data as Data
 from sklearn.model_selection import train_test_split
 warnings.filterwarnings("ignore")
 
-
-
 seed = 66
 random.seed(seed)
 np.random.seed(seed)
