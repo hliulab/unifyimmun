@@ -222,8 +222,8 @@ for fold in range(1, 6):
     val_data_tcr = pd.read_csv('../data/data_tcr_new/train_fold_{}_balanced.csv'.format(fold))
     print('Fold-{} Label: Train = {} | Val = {}'.format(fold, Counter(train_data_tcr.label),Counter(val_data_tcr.label)))
     print('TCR Train:')
-    path_all_tcr = '../trained model/TCR_2'
-    save_path_tcr = '../trained model/TCR_2/model_TCR_fold{}.pkl'.format(fold)
+    path_all_tcr = '../trained_model/TCR_2'
+    save_path_tcr = '../trained_model/TCR_2/model_TCR_fold{}.pkl'.format(fold)
     encoder_path_tcr = '../trained model/TCR_2/encoder_P_{}.pth'.format(fold)
     print('save path: ', save_path_tcr)
     performance_best_tcr, epoch_best_tcr = 0, -1
